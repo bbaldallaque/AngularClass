@@ -9,11 +9,12 @@ export class ProductListComponent {
   imageWidth: number = 50;
   imageMargin: number = 2;
   showImage: boolean = false;
+  listFilter: string = 'cart';
   products: any[] = [
   {
     "productId": 2,
     "productName": "Garden Cart",
-    "ProductCode": "GDN-0023",
+    "productCode": "GDN-0023",
     "releaseDate": "March 18, 2019",
     "descripcion": "15 gallon capacity rollin garden",
     "price": 32.99,
@@ -24,7 +25,7 @@ export class ProductListComponent {
   {
     "productId": 5,
     "productName": "Hammer",
-    "ProductCode": "TXB-0048",
+    "productCode": "TXB-0048",
     "releaseDate": "May 21, 2019",
     "descripcion": "Curve claw stell hammer",
     "price": 8.9,
