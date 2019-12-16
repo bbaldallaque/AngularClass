@@ -1,0 +1,28 @@
+<div class='card' *ngIf='product'>
+    <div class='card-header'>
+        {{pageTitle + ': ' + product.productName}}
+    </div>
+</div>
+<!--
+<div class='col-md-6'>
+  <div class='row'>
+    <div class='col-md-3'>Name</div>
+    <div class='col-md-6'>{{product? productName}}</div>
+  </div>
+  <div class='row'>
+    <div class='col-md-3'>Code</div>
+    <div class='col-md-6'>{{product? productCode}}
+    </div>
+    <div class='row'>
+      <div class='col-md-3'>Description</div>
+      <div class='col-md-6'>{{product? description}}
+      </div>
+      <div class='row'>
+        <div class='col-md-3'>Availablety</div>
+        <div class='col-md-6'>{{product? releaseDate}}
+        </div>
+        <div class='row'>
+          <div class='col-md-3'>Price</div>
+          <div class='col-md-6'>{{product? price | currency: 'DOP ' :true}}
+          </div>
+        </div>-->

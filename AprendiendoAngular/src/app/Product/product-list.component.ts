@@ -4,7 +4,7 @@ import { ProductService } from './product.service';
 
 @Component({
    // tslint:disable-next-line: component-selector
-   selector: 'pm-products',
+   //selector: 'pm-products',
    templateUrl: './product-list-component.html',
    providers: [ProductService],
    styleUrls: ['./product-list-component.css']

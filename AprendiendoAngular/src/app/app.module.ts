@@ -10,6 +10,10 @@ import { StarComponent } from './shared/star.component';
 
 import { AppComponent } from './app.component';
 import { from } from 'rxjs';
+import { ProductDetailComponent } from './product/product-detail.component';
+
+import { RouterModule } from '@angular/router';
+import { WelcomeComponent } from './Home/welcome.component';
 
 
 
@@ -18,13 +22,22 @@ import { from } from 'rxjs';
     AppComponent,
     ProductListComponent,
     ConvertToSpacesPipe,
-    StarComponent
+    StarComponent,
+    ProductDetailComponent,
+    WelcomeComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     FormsModule,
-    HttpClientModule
+    HttpClientModule,
+    RouterModule.forRoot([
+      { path: 'product', component: ProductListComponent },
+      { path: 'product/:id', component: ProductDetailComponent },
+      { path: 'welcome', component: WelcomeComponent },
+       {path: '', redirectTo: 'welcome', pathMatch: 'full' },
+      { path: '**', redirectTo: 'welcome', pathMatch: 'full' },
+    ])
   ],
 
 
