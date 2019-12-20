@@ -105,5 +105,6 @@ ngOnInit(): void {
   },
     error: err => this.errorMessage = err
   });
+  this.filteredProducts = this.products;
  }
 }
